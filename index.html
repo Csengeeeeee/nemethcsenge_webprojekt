@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley webprojekt</title>
 <style>
-    body {
-        background-image: url(23cfeaed-c466-42b2-a5db-c919d10389d2.jpeg);
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
+      html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+    .hatterkep {
+        width: 100%;
+        height: 101%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .link {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
     }
 </style>
 </head>
 <body>
-    
+    <img class="hatterkep" src="kepek\loading_screen_done.jpg" usemap="#elsooldal">
+    <div class="link">
+    <a href="https://www.stardewvalley.net/" target="_blank">A játék oldala</a></div>
+    <map name="elsooldal">
+        <area shape="rect" coords="689,770,470,935" href="szereplok.html">
+        <area shape="rect" coords="720,770,940,935" href="jatekmenet.html">
+        <area shape="rect" coords="961,770,1190,935" href="termenyek.html">
+        <area shape="rect" coords="1215,770,1440,935" href="esemenyek.html">
+    </map>
+
 </body>
 </html>
