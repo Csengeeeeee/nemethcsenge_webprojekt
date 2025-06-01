@@ -3,23 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Termények</title>
     <style>
         body {
             font-size: 30px;
+            background-image: url(termenyekwallpaper.jpg);
+            background-attachment: fixed;
         }
         h1 {
             text-align: center;
+            color: azure;
+            text-shadow: 2px 2px black;
         }
+        .fooldalra img {
+            position: absolute;
+            width: 100px;
+            height:auto;
+            top: 10px;
+            right: 10px;
+        }   
+        a {
+            color: blue;
+        }
+        table,th,td {
+            border: 2px solid;
+            border-collapse: collapse;
+            background-color: rgba(240, 255, 255, 0.5);
+        }
+        p {
+             display: inline-block;
+            background-color: rgba(240, 255, 255, 0.8);
+        }
+        .kepesszoveg {
+            display: flex;
+        }
+        .kepesszoveg img {
+            width: 550px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Termények <img src="kepek\Brown_Chicken.png"></h1>
-    <p>A Stardew Valley-ban a termények termesztése a gazdálkodás alapja. Minden évszakban más-más növények ültethetők, 
-        amelyek eltérő növekedési idővel, hozammal és értékkel rendelkeznek. A megfelelő termények kiválasztása és gondozása kulcsfontosságú a farm sikeréhez.
+    <h1>Termények <a href="index.html" class="fooldalra"><img src="kepek\Brown_Chicken.png" title="Vissza a főoldalra"></a></h1>
+    <p>A Stardew Valley-ban a <a href="https://stardewvalleywiki.com/Crops" target="_blank">termények</a> termesztése a gazdálkodás alapja. Minden évszakban más-más növények ültethetők, 
+        amelyek eltérő növekedési<br> idővel,
+         hozammal és értékkel rendelkeznek. A megfelelő termények kiválasztása és gondozása kulcsfontosságú a farm sikeréhez.
     </p>
     <table>
-
+        <tr>
+            <th>Termény</th>
+            <th>Évszak</th>
+            <th>Növekedési idő</th>
+            <th>Eladási ár</th>
+            <th>Jellemzők</th>
+        </tr>
+        <tr>
+            <td>Eper</td>
+            <td>Tavasz</td>
+            <td>8 nap</td>
+            <td>120g</td>
+            <td>Többször szüretelhető; csak a Tavaszi Tojásfesztiválon vásárolható meg.</td>
+        </tr>        
+        <tr>
+             <td>Karfiol</td>
+            <td>Tavasz</td>
+            <td>12 nap</td>
+            <td>175g</td>
+            <td>Lehetőség óriás terményre 3x3-as elrendezésben</td>
+        </tr>        
+        <tr>
+             <td>Burgonya</td>
+            <td>Tavasz</td>
+            <td>6 nap</td>
+            <td>80g</td>
+            <td>Esély extra termésre szüretkor</td>
+        </tr>        
+        <tr>
+            <td>Zöldbab</td>
+            <td>Tavasz</td>
+            <td>10 nap</td>
+            <td>40g</td>
+            <td>Többször szüretelhető; 3 naponta újra terem.</td>
+        </tr>        
+        <tr>
+             <td>Áfonya</td>
+            <td>Nyár</td>
+            <td>13 nap</td>
+            <td>50g</td>
+            <td>Többször szüretelhető; 4 naponta újra terem; 3 bogyó termésenként.</td>
+        </tr>        
+        <tr>
+            <td>Csillaggyümölcs</td>
+            <td>Nyár</td>
+            <td>13 nap</td>
+            <td>750g</td>
+            <td>Magas értékű; a sivatagban vásárolható magja.</td>
+        </tr>        
+        <tr>
+             <td>Komló</td>
+            <td>Nyár</td>
+            <td>11 nap</td>
+            <td>25g</td>
+            <td>Többször szüretelhető; 1 naponta újra terem; sör készíthető belőle.</td>
+        </tr>        
+        <tr>
+            <td>Dinnye</td>
+            <td>Nyár</td>
+            <td>12 nap</td>
+            <td>250g</td>
+            <td>Lehetőség óriás terményre 3x3-as elrendezésben.</td>
+        </tr>        
+        <tr>
+             <td>Áfonya (vörös)</td>
+            <td>Ősz</td>
+            <td>7 nap</td>
+            <td>75g</td>
+            <td>Többször szüretelhető; 5 naponta újra terem; 2 bogyó termésenként.</td>
+        </tr>        
+        <tr>
+            <td>Tök</td>
+            <td>Ősz</td>
+            <td>13 nap</td>
+            <td>320g</td>
+            <td>Lehetőség óriás terményre 3x3-as elrendezésben.</td>
+        </tr>        
+        <tr>
+             <td>Édes drágagyümölcs</td>
+            <td>Ősz</td>
+            <td>24 nap</td>
+            <td>3000g</td>
+            <td>Magas értékű; ritka magból nő; nem használható konyhai receptekhez.</td>
+        </tr>        
+        <tr>
+             <td>Brokkoli</td>
+            <td>Ősz</td>
+            <td>8 nap</td>
+            <td>70g</td>
+            <td>Többször szüretelhető; 4 naponta újra terem;</td>
+        </tr>        
+        <tr>
+             <td>Poradinnye</td>
+            <td>Tél</td>
+            <td>10 nap</td>
+            <td>240g</td>
+            <td>Új termény a 1.6-os frissítésben; télen termeszthető.</td>
+        </tr>
     </table>
+    <div class="kepesszoveg">
+    <img src="crop.jpg">
+    <div class="szoveg">
+    <p>
+        Az eladási árak az alap minőségű terményekre vonatkoznak,<br> és nem tartalmazzák a feldolgozott termékek (pl. lekvár, bor) értékét.<br>
+         A feldolgozás jelentősen növelheti a profitot.<br>
+    A termények kiválasztásánál érdemes figyelembe venni a növekedési időt,<br> a többszöri szüretelhetőséget  és a feldolgozás lehetőségét.<br>
+    Például az eper és az áfonya többször is szüretelhető egy szezonban,<br> míg a csillaggyümölcs és az édes drágagyümölcs magas eladási árral rendelkezik, <br>
+    de hosszabb növekedési idővel.
+    </p>
+    </div>
+</div>
 </body>
 </html>
